@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Basic Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "server-grooming", "server-grooming\server-grooming.vbproj", "{7FA8796D-772D-471E-BABC-1DA0F137707C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FA8796D-772D-471E-BABC-1DA0F137707C}.Debug|x86.ActiveCfg = Debug|x86
+		{7FA8796D-772D-471E-BABC-1DA0F137707C}.Debug|x86.Build.0 = Debug|x86
+		{7FA8796D-772D-471E-BABC-1DA0F137707C}.Release|x86.ActiveCfg = Release|x86
+		{7FA8796D-772D-471E-BABC-1DA0F137707C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
