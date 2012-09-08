@@ -7,13 +7,16 @@
             Console.WriteLine("Main Menu")
             Console.WriteLine("==========================")
             Console.WriteLine("1. Delete Windows Temporary Files")
-            Console.WriteLine("2. Exit" & vbNewLine)
+            Console.WriteLine("2. Delete User Profile Temporary Files")
+            Console.WriteLine("3. Exit" & vbNewLine)
             Console.Write("Enter your choice: ")
             If Integer.TryParse(Console.ReadLine(), intInput) Then
                 Select Case intInput
                     Case 1
                         windir.windir()
                     Case 2
+                        profiledir.profiledir()
+                    Case 3
                         Exit Sub
                 End Select
             Else
@@ -43,4 +46,24 @@ Module windir
         End If
     End Sub
 
+End Module
+Module profiledir
+    Sub profiledir()
+        Dim counter As System.Collections.ObjectModel.ReadOnlyCollection(Of String)
+        Dim profenv As String = My.Application.GetEnvironmentVariable("temp")
+        Dim proftempfiles As String = profenv & "\*"
+        Dim proftemp As String = profenv
+        counter = My.Computer.FileSystem.GetFiles(proftemp)
+        If counter.Count <= 0 Then
+            Console.WriteLine("There are no files to delete")
+            Console.WriteLine("Press Enter to return to the main menu")
+            Console.ReadLine()
+            Exit Sub
+            mainmenu.Main()
+        Else
+            Console.WriteLine("You have selected option 1")
+            Kill(proftempfiles)
+            Console.WriteLine("Windows Temporary Files Deleted")
+        End If
+    End Sub
 End Module

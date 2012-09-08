@@ -1,0 +1,10 @@
+C:\Users\Thomas.ITADAMS\Documents\GitHub\server-grooming\server-grooming\server-grooming\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Thomas.ITADAMS\Documents\GitHub\server-grooming\server-grooming\server-grooming\obj\x86\Debug\server_grooming.Resources.resources
+C:\Users\Thomas.ITADAMS\Documents\GitHub\server-grooming\server-grooming\server-grooming\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Thomas.ITADAMS\Documents\GitHub\server-grooming\server-grooming\server-grooming\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Thomas.ITADAMS\Documents\GitHub\server-grooming\server-grooming\server-grooming\bin\Debug\server-grooming.exe
+C:\Users\Thomas.ITADAMS\Documents\GitHub\server-grooming\server-grooming\server-grooming\bin\Debug\server-grooming.pdb
+C:\Users\Thomas.ITADAMS\Documents\GitHub\server-grooming\server-grooming\server-grooming\bin\Debug\server-grooming.xml
+C:\Users\Thomas.ITADAMS\Documents\GitHub\server-grooming\server-grooming\server-grooming\obj\x86\Debug\server-grooming.exe
+C:\Users\Thomas.ITADAMS\Documents\GitHub\server-grooming\server-grooming\server-grooming\obj\x86\Debug\server-grooming.xml
+C:\Users\Thomas.ITADAMS\Documents\GitHub\server-grooming\server-grooming\server-grooming\obj\x86\Debug\server-grooming.pdb

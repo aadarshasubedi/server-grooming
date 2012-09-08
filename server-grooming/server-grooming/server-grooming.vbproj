@@ -9,7 +9,7 @@
     </SchemaVersion>
     <ProjectGuid>{7FA8796D-772D-471E-BABC-1DA0F137707C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>server_grooming.Module1</StartupObject>
+    <StartupObject>server_grooming.mainmenu</StartupObject>
     <RootNamespace>server_grooming</RootNamespace>
     <AssemblyName>server-grooming</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -69,7 +69,7 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Module1.vb" />
+    <Compile Include="server-grooming.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
