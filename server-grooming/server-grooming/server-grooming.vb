@@ -1,5 +1,4 @@
 ﻿Module mainmenu
-
     Sub Main()
         Do
             Dim intInput As Integer = 0
@@ -24,7 +23,6 @@
             End If
         Loop
     End Sub
-
 End Module
 Module windir
     Sub windir()
@@ -32,6 +30,7 @@ Module windir
         Dim windirenv As String = My.Application.GetEnvironmentVariable("windir")
         Dim wintempfiles As String = windirenv & "\Temp\*"
         Dim wintemp As String = windirenv & "\Temp\"
+        Dim Files As String() = IO.Directory.GetFiles(wintemp)
         counter = My.Computer.FileSystem.GetFiles(wintemp)
         If counter.Count <= 0 Then
             Console.WriteLine("There are no files to delete")
@@ -40,12 +39,19 @@ Module windir
             Exit Sub
             mainmenu.Main()
         Else
-            Console.WriteLine("You have selected option 1")
-            Kill(wintempfiles)
+            Console.WriteLine("Deleting Windows Temporary Files")
+            For Each foundFile As String In My.Computer.FileSystem.GetFiles(wintemp)
+                    Console.WriteLine(foundFile)
+                Try
+                    Catch ex As System.IO.IOException
+                        System.IO.File.Delete(foundFile)
+                    End Try
+            Next
             Console.WriteLine("Windows Temporary Files Deleted")
+            Console.WriteLine("Press Enter to return to the main menu")
+            Console.ReadLine()
         End If
     End Sub
-
 End Module
 Module profiledir
     Sub profiledir()
@@ -53,6 +59,7 @@ Module profiledir
         Dim profenv As String = My.Application.GetEnvironmentVariable("temp")
         Dim proftempfiles As String = profenv & "\*"
         Dim proftemp As String = profenv
+        Dim Files As String() = IO.Directory.GetFiles(proftemp)
         counter = My.Computer.FileSystem.GetFiles(proftemp)
         If counter.Count <= 0 Then
             Console.WriteLine("There are no files to delete")
@@ -61,9 +68,17 @@ Module profiledir
             Exit Sub
             mainmenu.Main()
         Else
-            Console.WriteLine("You have selected option 1")
-            Kill(proftempfiles)
-            Console.WriteLine("Windows Temporary Files Deleted")
+            Console.WriteLine("Deleting Current User Profile Temporary Files")
+            For Each foundFile As String In My.Computer.FileSystem.GetFiles(proftemp)
+                Console.WriteLine(foundFile)
+                Try
+                Catch ex As System.IO.IOException
+                    System.IO.File.Delete(foundFile)
+                End Try
+            Next
+            Console.WriteLine("Current User Profile Temporary Files Deleted")
+            Console.WriteLine("Press Enter to return to the main menu")
+            Console.ReadLine()
         End If
     End Sub
 End Module
